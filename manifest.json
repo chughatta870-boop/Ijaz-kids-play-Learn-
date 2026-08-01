@@ -1,0 +1,84 @@
+{
+  "id": ".",
+  "name": "Ijaz Kids Play & Learn - Educational Games",
+  "short_name": "Kids Play & Learn",
+  "description": "Animated educational game app for kids - English, Urdu, Numbers, Colors, Shapes with talking letters and counting games. By M Ijaz, GHS 124/NB",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#FFF6E9",
+  "theme_color": "#FF6B9D",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "kids", "games"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Ijaz Kids Play & Learn - mobile view"
+    },
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Ijaz Kids Play & Learn - desktop view"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "English Alphabet",
+      "short_name": "English",
+      "description": "Jump straight to the English Alphabet game",
+      "url": ".?tab=english",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Numbers & Counting",
+      "short_name": "Numbers",
+      "description": "Jump straight to Numbers & Counting game",
+      "url": ".?tab=numbers",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Fun Quiz",
+      "short_name": "Quiz",
+      "description": "Jump straight to the Fun Quiz Game",
+      "url": ".?tab=quiz",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
