@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Ijaz Kids Play &amp; Learn</title>
+<meta name="description" content="Animated educational game app for kids - Urdu, English, Math, Colors, Shapes. By M Ijaz, GHS 124/NB">
+<meta name="theme-color" content="#FF6B9D">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Splash -->
+<div id="splash">
+  <div class="splash-star">⭐</div>
+  <h1>Ijaz Kids<br>Play &amp; Learn</h1>
+  <div class="splash-loader"><div></div></div>
+</div>
+
+<div id="app" class="hidden">
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <button id="homeBtn" class="icon-btn" aria-label="Home">🏠</button>
+    <div class="brand">Ijaz Kids <span>Play &amp; Learn</span></div>
+    <div class="stars-counter" id="starsCounter">⭐ <span id="starsCount">0</span></div>
+    <button id="muteBtn" class="icon-btn" aria-label="Mute">🔊</button>
+  </header>
+
+  <!-- Home screen -->
+  <section id="homeScreen" class="screen">
+    <div class="mascot-wrap">
+      <div id="mascot" class="mascot">🦉</div>
+      <div id="speechBubble" class="speech-bubble hidden"></div>
+    </div>
+    <h2 class="home-title">Chalo Seekhtay Hain! <span class="sub">Let's Learn Together!</span></h2>
+    <div class="menu-grid">
+      <button class="menu-card" data-tab="english" style="--c1:#FF6B9D;--c2:#FF9A9E;">
+        <span class="menu-emoji">🔤</span><span class="menu-label">English<br>Alphabet</span>
+      </button>
+      <button class="menu-card" data-tab="urdu" style="--c1:#6C5CE7;--c2:#A29BFE;">
+        <span class="menu-emoji">📖</span><span class="menu-label urdu-font">اردو<br>حروفِ تہجی</span>
+      </button>
+      <button class="menu-card" data-tab="numbers" style="--c1:#00B894;--c2:#55EFC4;">
+        <span class="menu-emoji">🔢</span><span class="menu-label">Numbers &amp;<br>Counting</span>
+      </button>
+      <button class="menu-card" data-tab="colors" style="--c1:#FDCB6E;--c2:#FFA502;">
+        <span class="menu-emoji">🎨</span><span class="menu-label">Colors<br>رنگ</span>
+      </button>
+      <button class="menu-card" data-tab="shapes" style="--c1:#0984E3;--c2:#74B9FF;">
+        <span class="menu-emoji">⭐</span><span class="menu-label">Shapes<br>اشکال</span>
+      </button>
+      <button class="menu-card" data-tab="quiz" style="--c1:#E17055;--c2:#FAB1A0;">
+        <span class="menu-emoji">🎯</span><span class="menu-label">Fun Quiz<br>Game</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Category screen (English / Urdu / Numbers / Colors / Shapes) -->
+  <section id="categoryScreen" class="screen hidden">
+    <div class="cat-header">
+      <button class="back-btn" id="backBtn">◀ Back</button>
+      <h2 id="catTitle">English Alphabet</h2>
+      <button class="repeat-btn" id="repeatBtn">🔁</button>
+    </div>
+
+    <div id="stage" class="stage">
+      <div id="stageEmoji" class="stage-emoji">👋</div>
+      <div id="stageBig" class="stage-big">A</div>
+      <div id="stageWord" class="stage-word">Apple</div>
+      <div id="countingRow" class="counting-row hidden"></div>
+    </div>
+
+    <div id="itemsGrid" class="items-grid"></div>
+  </section>
+
+  <!-- Quiz screen -->
+  <section id="quizScreen" class="screen hidden">
+    <div class="cat-header">
+      <button class="back-btn" id="quizBackBtn">◀ Back</button>
+      <h2>Fun Quiz Game</h2>
+      <div class="quiz-score">Score: <span id="quizScore">0</span></div>
+    </div>
+    <div class="quiz-body">
+      <div id="quizQuestion" class="quiz-question">Tap the correct answer!</div>
+      <div id="quizOptions" class="quiz-options"></div>
+      <div id="quizFeedback" class="quiz-feedback"></div>
+    </div>
+  </section>
+
+  <div id="confettiLayer"></div>
+
+  <footer class="watermark">M Ijaz · GHS 124/NB</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
